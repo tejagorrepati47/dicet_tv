@@ -1,0 +1,29 @@
+hosts: all
+
+user: c2-user
+
+become: yes
+
+tasks:
+
+name: Install docker
+
+yum:
+
+name: docker
+
+state: present
+
+name: start docker
+
+service:
+
+name: docker
+
+state: started
+
+enabled: yes
+
+name: docker run container
+
+command: docker run-name test op 8080:6080 vamsibyramala/new-proj
