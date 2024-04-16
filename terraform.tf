@@ -1,8 +1,8 @@
 locals{
 
-vpc_id = "vpc-08ddf31f32937734b"
+vpc_id = "vpc-02be02401c6f52099"
 
-subnet_id = "subnet-016f46d1cadcabd7e"
+subnet_id = "subnet-016452da02fdebe89"
 
 ssh_user = "ec2-user"
 
