@@ -69,4 +69,3 @@ command = "ansible-playbook -1 $(aws_instance.tomcat.public_ip), --private-key $
 
 output "tomcat_ip" {
 value aus instance.tomcat.public_ip
-}
