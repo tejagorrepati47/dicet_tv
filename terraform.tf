@@ -6,9 +6,9 @@ subnet_id = "subnet-016452da02fdebe89"
 
 ssh_user = "ec2-user"
 
-key_name = "mumbai"
+key_name = "slave1"
 
-private_key_path = "./mumbai.pem"
+private_key_path = "./slave1.pem"
 
 }
 
