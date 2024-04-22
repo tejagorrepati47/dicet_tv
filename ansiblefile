@@ -26,4 +26,4 @@ enabled: yes
 
 name: docker run container
 
-command: docker run-name test op 8080:6080 gorrepatiteja/new-project
+command: docker run-name test op 8080:6080 gorrepatiteja/new-project2
