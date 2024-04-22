@@ -36,6 +36,12 @@ pipeline
                       sh 'docker push gorrepatiteja/new-project2'
                     }
             }
+              steps 
+            {
+                sh '''terraform init
+                      terraform plan
+                      terraform apply'''
+            }
         }
     }
 }
