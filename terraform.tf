@@ -1,8 +1,8 @@
 locals{
 
-vpc_id = "vpc-02be02401c6f52099"
+vpc_id = "vpc-091b053c120f1fef0"
 
-subnet_id = "subnet-016452da02fdebe89"
+subnet_id = "subnet-098495514e8b73e6b"
 
 ssh_user = "ec2-user"
 
@@ -14,8 +14,8 @@ private_key_path = "./slave1.pem"
 
 provider "aws" {
 region = "ap-south-1"
-access_key = "AKIA2DEAK7L05F76ID5N"
-secret_key = "+AzGdYaeUtv42EOPN6w/ZM1X3EgGnK+8d06uNlok"
+access_key = "AKIAZI2LBX3YY5NAE663"
+secret_key = "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"
 }
 
 resource "aws_security_group" "tomcat" {
@@ -44,7 +44,7 @@ cidr_blocks = ["0.0.0.0/0"]
 }
 }
 resource "aws_instance" "tomcat" {
-ami="ami-0451f2687182e0411"
+ami="ami-029e4db491be76287"
 subnet_id=local.subnet_id
 instance_type= "t2.micro"
 tags = { Name = "terraform-docker" }
